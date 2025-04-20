@@ -16,9 +16,9 @@ class EventCreateSchema(SQLModel):
     page: str
     description: Optional[str] = Field(default="")
 
-class EventUpdateSchema(SQLModel):
-    description: Str
+# class EventUpdateSchema(SQLModel):
+#     description: Str
 
-class EventListSchema(SQLModel):
-    results: List[EventModel]
-    count: int
+# class EventListSchema(SQLModel):
+#     results: List[EventModel]
+#     count: int
