@@ -1,0 +1,13 @@
+services:
+  db_service:
+    image: timescale/timescaledb-ha:pg17
+    environment:
+      - POSTGRES_PASSWORD=asdf
+      - POSTGRES_USER=postgres-POSTGRES_USER
+      - POSTGRES_DB=timescaledb
+    ports:
+      - 5432:5432
+    expose:
+      - 5432
+    volumes:
+      - ./data:/var/lib/postgresql/data
